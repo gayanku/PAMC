@@ -26,12 +26,12 @@ The dataset contains 2 folders, `data` and `graph`. Please obtain them from the 
 
 - To run using PAMC on the 6 datasets, for 10 iterations, use the following. This code has GPU time and memory profiling enabled, which can be turned off by commenting relevant code. Our published ACC,NMI,ARI and F1 was run with profiling commented. 
 ```
-$SCRIPT --name usps --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 2    --beta 2   --order 4 --tau 0.5    --lr 0.001   --influence 
-$SCRIPT --name hhar --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 0.5  --beta 12.5  --order 2 --tau 1.5  --lr 0.001  --influence    
-$SCRIPT --name reut --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 1  --beta 0.2 --order 1 --tau 0.25   --lr 0.0001  --influence 
-$SCRIPT --name acm  --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 0.5   --beta 0.5   --order 1 --tau 0.5   --lr 0.001   --influence 
-$SCRIPT --name dblp --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 2    --beta 2   --order 1 --tau 1      --lr 0.001   --influence  
-$SCRIPT --name cite --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 2    --beta 2.5 --order 3 --tau 0.5    --lr 0.001   --influence  
+python train.py  --name usps --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 2    --beta 2   --order 4 --tau 0.5    --lr 0.001   --influence 
+python train.py --name hhar --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 0.5  --beta 12.5  --order 2 --tau 1.5  --lr 0.001  --influence    
+python train.py  --name reut --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 1  --beta 0.2 --order 1 --tau 0.25   --lr 0.0001  --influence 
+python train.py  --name acm  --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 0.5   --beta 0.5   --order 1 --tau 0.5   --lr 0.001   --influence 
+python train.py  --name dblp --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 2    --beta 2   --order 1 --tau 1      --lr 0.001   --influence  
+python train.py  --name cite --iterations 10 --epochs 200 --model SCGC_TRIMPOSCCSP --verbosity 0   --alpha 2    --beta 2.5 --order 3 --tau 0.5    --lr 0.001   --influence  
 ```
 The usps output is
 ```
