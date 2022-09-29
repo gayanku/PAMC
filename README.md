@@ -95,7 +95,7 @@ Datasets and code is forked from [SDCN](https://github.com/bdy9527/SDCN). We use
 @article{kulatilleke2022efficient,
   title={Efficient block contrastive learning via parameter-free meta-node approximation}, 
   author={Kulatilleke, Gayan K and Portmann, Marius and Chandra, Shekhar S},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2209.14067},
   year={2022}
 }
 ```
